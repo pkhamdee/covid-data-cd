@@ -14,7 +14,7 @@ commonLabels:
 
 images:
   - name: harbor.dev.pkhamdee.com/cna-covid/covid-data-staging
-    newTag: latest
+    newTag: sha256:85bd37918c7428e07b57473ff9898734c714117d22af6f1b55c245b45b83caff
 
 patchesStrategicMerge:
   - custom-ingress.yaml
