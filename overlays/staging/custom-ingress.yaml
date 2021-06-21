@@ -4,7 +4,7 @@ metadata:
   name: cna-covid-data
   labels:
     app: cna-covid-data
-  namespace: cna-covid-data-staging
+  namespace: cna-covid-data
 spec:
   rules:
     - host: "covid-data-staging.dev.pkhamdee.com"
