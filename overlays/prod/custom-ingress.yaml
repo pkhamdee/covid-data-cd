@@ -1,0 +1,20 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: cna-covid-data
+  namespace: cna-covid-data
+spec:
+  rules:
+    - host: "*.api.dev.pkhamdee.com"
+      http:
+        paths:
+          - path: /api/v1/reports.*
+            backend:
+              serviceName: cna-covid-data
+              servicePort: 80
+    - http:
+        paths:
+          - path: /api/v1/reports.*
+            backend:
+              serviceName: cna-covid-data
+              servicePort: 80

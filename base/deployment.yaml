@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cna-covid-data
+  labels:
+    app: cna-covid-data
+spec:
+  selector:
+    matchLabels:
+      app: cna-covid-data
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: cna-covid-data
+    spec:
+      containers:
+        - name: cna-covid-data
+          image: harbor.dev.pkhamdee.com/cna-covid/covid-data:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080

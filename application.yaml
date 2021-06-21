@@ -1,0 +1,18 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: cna-covid-data-staging
+  namespace: cna-covid-data-staging
+spec:
+  project: default 
+  source: 
+    repoURL: https://github.com/pkhamdee/covid-data-cd.git
+    targetRevision: HEAD
+    path: overlays/staging
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: dotnet-dev
+  syncPolicy:
+    automated:
+      prune: true

@@ -1,0 +1,17 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+bases:
+  - ../../base
+
+namespace: cna-covid-data
+
+commonLabels:
+  app: cna-covid-data
+
+images:
+  - name: harbor.dev.pkhamdee.com/cna-covid/covid-data
+    newTag: latest
+
+patchesStrategicMerge:
+  - custom-ingress.yaml
