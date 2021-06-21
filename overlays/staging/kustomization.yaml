@@ -13,8 +13,9 @@ commonLabels:
   app: cna-covid-data
 
 images:
-  - name: harbor.dev.pkhamdee.com/cna-covid/covid-data-staging
-    newTag: sha256:85bd37918c7428e07b57473ff9898734c714117d22af6f1b55c245b45b83caff
+  - name: harbor.dev.pkhamdee.com/cna-covid/covid-data
+    newName: harbor.dev.pkhamdee.com/cna-covid/covid-data-staging
+    newTag: test
 
 patchesStrategicMerge:
   - custom-ingress.yaml

@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: cna-covid-data
-          image: harbor.dev.pkhamdee.com/cna-covid/covid-data:latest
+          image: harbor.dev.pkhamdee.com/cna-covid/covid-data
           imagePullPolicy: Always
           ports:
             - containerPort: 8080

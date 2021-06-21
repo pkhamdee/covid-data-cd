@@ -14,7 +14,7 @@ commonLabels:
 
 images:
   - name: harbor.dev.pkhamdee.com/cna-covid/covid-data
-    newTag: latest
+    newTag: test
 
 patchesStrategicMerge:
   - custom-ingress.yaml
