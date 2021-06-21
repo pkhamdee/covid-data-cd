@@ -12,7 +12,7 @@ spec:
     path: overlays/staging
   destination:
     server: https://kubernetes.default.svc
-    namespace: dotnet-dev
+    namespace: cna-covid-data-staging
   syncPolicy:
     automated:
       prune: true

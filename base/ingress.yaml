@@ -4,8 +4,7 @@ metadata:
   name: cna-covid-data
   labels:
     app: cna-covid-data
-  annotations:
-    kubernetes.io/ingress.class: contour
+  namespace: cna-covid-data-staging
 spec:
   rules:
     - host: "covid-data.dev.pkhamdee.com"
