@@ -13,22 +13,3 @@ spec:
   selector:
     app: cna-covid-data
   type: ClusterIP
-  ---
-  apiVersion: monitoring.coreos.com/v1
-  kind: ServiceMonitor
-  metadata:
-    namespace: monitoring
-    name: cna-covid-data
-    labels:
-      release: monitoring-release
-  spec:
-    selector:
-      matchLabels:
-        app: cna-covid-data
-    namespaceSelector:
-      matchNames:
-        - default
-    endpoints:
-      - port: cna-covid-data
-        path: '/actuator/prometheus'
-        interval: 1s

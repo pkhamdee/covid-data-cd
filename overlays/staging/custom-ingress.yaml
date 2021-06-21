@@ -5,7 +5,7 @@ metadata:
   namespace: cna-covid-data-staging
 spec:
   rules:
-    - host: "*.api-staging.dev.pkhamdee.com"
+    - host: "covid-data-staging.dev.pkhamdee.com"
       http:
         paths:
           - path: /api/v1/reports.*
