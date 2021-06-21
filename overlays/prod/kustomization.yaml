@@ -14,7 +14,7 @@ commonLabels:
 
 images:
   - name: harbor.dev.pkhamdee.com/cna-covid/covid-data
-    newName: harbor.dev.pkhamdee.com/cna-covid/covid-data@sha256:272b9d43437098364a8897419569073fe124ddfec0b3adb480bd512888758080
+    newName: harbor.dev.pkhamdee.com/cna-covid/covid-data@sha256
 
 patchesStrategicMerge:
   - custom-ingress.yaml
